@@ -7,8 +7,8 @@
       <input type="password" v-model="user.password" />
       <button type="submit">Login</button>
     </form>
-    <h2>Welcome {{ user.username }}</h2>
-    <h2>Please Login</h2>
+    <h2 v-if="loggedIn">Welcome {{ user.username }}</h2>
+    <h2 v-else>Please Login</h2>
   </div>
 </template>
 
