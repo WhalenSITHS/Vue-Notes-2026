@@ -3,6 +3,8 @@
     <AnimalCard v-for="animal in animals" :key="animal.name" :animal="animal">{{
       animal.name
     }}</AnimalCard>
+
+    <AnimalCard :animal="jean"> </AnimalCard>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ const animals = ref([
   { name: 'Gerry', species: 'Giraffe', weight: 1200 },
   { name: 'Bella', species: 'Bear', weight: 300 },
 ])
+const jean = {}
 </script>
 
 <style scoped>
