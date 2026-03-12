@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <PokemonCard v-for="(mon, index) in pokemon" :key="mon.name" :pokemon="mon" :id="index + 1" />
   </div>
 </template>
@@ -23,4 +23,14 @@ onMounted(() => {
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  width: 80vw;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+</style>
