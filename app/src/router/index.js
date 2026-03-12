@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import CookieClicker from '@/views/CookieClicker.vue'
 import UserCreate from '@/views/UserCreate.vue'
 import VueLists from '@/views/ViewLists.vue/'
-
+import PokemonData from '@/views/PokemonData.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,6 +20,11 @@ const router = createRouter({
       path: '/vue-lists',
       name: 'vue-lists',
       component: VueLists,
+    },
+    {
+      path: '/pkmn/:id',
+      name: 'pokemon data',
+      component: PokemonData,
     },
   ],
 })
