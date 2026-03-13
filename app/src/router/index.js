@@ -23,7 +23,7 @@ const router = createRouter({
     },
     {
       path: '/pkmn/:id',
-      name: 'pokemon data',
+      name: 'pokemondata',
       component: PokemonData,
     },
   ],
