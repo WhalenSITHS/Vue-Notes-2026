@@ -11,6 +11,7 @@ import { onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const pokemon = ref({})
+const loading = ref(false)
 async function getPokemon(id) {
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
   const data = await response.json()
